@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliteRide Auto Group LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .gradient-btn {
+        background-image: linear-gradient(to right, #2563eb, #06b6d4, #3b82f6);
+        color: white;
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        border-radius: 9999px;
+        background-size: 600% 100%;
+        background-repeat: no-repeat;
+        transition: background-position 0.4s ease;
+      }
+
+      .gradient-btn:hover {
+        background-position: right center;
+      }
+
+      .btn-1 { background-position: 0% 0%; }
+      .btn-2 { background-position: 20% 0%; }
+      .btn-3 { background-position: 40% 0%; }
+      .btn-4 { background-position: 60% 0%; }
+      .btn-5 { background-position: 80% 0%; }
+      .btn-6 { background-position: 100% 0%; }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0f0f11] text-white">
+    <!-- Header Section with Centered Logo and Title -->
+    <header class="bg-[#0a0a0c] text-white py-10 px-8 border-b border-gray-700">
+      <div class="flex flex-col items-center justify-center">
+        <!-- Logo -->
+        <img src="https://i.imgur.com/lwY6wXE.png" alt="EliteRide Logo" class="max-w-[00px] w-1/2 object-contain drop-shadow-lg rounded-full mb-4" />
+
+        <!-- Title -->
+        <br>
+        <div class="text-center">
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent drop-shadow-md">
+            EliteRide Auto Group LLC
+          </h1>
+          <br>
+          <p class="text-sm mt-2 text-blue-400 uppercase tracking-wider">Reliable. Affordable. Local.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section for Action Buttons and Description -->
+    <section class="py-16 px-8 text-center bg-[#121214]">
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <button class="gradient-btn btn-1">Cars</button>
+        <button class="gradient-btn btn-2">Trucks</button>
+        <button class="gradient-btn btn-3">SUVs</button>
+        <button class="gradient-btn btn-4">Under $10,000</button>
+        <button class="gradient-btn btn-5">Under $5,000</button>
+        <button class="gradient-btn btn-6">Low Down</button>
+      </div>
+      <h2 class="text-6xl font-extrabold text-slate-100 mb-6 tracking-tight">Find Your Next Ride.</h2>
+      <p class="text-xl text-blue-200 font-semibold mb-8">Handpicked. Inspected. Delivered.</p>
+      <br>
+      <a href="#inventory" class="inline-block bg-gradient-to-r from-blue-600 to-cyan-400 hover:from-cyan-400 hover:to-blue-600 text-white text-xl font-bold px-10 py-4 rounded-xl transition">View Inventory</a>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section id="inventory" class="py-16 px-8 bg-[#0f0f11]">
+      <h3 class="text-5xl font-bold text-center text-slate-100 mb-10">Featured Vehicles</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Row 1 -->
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://th.bing.com/th/id/ORA4.22C24B49A502A4314A536BC4931CC44A_B283BDF42317DE54?w=176&h=106&o=6&dpr=2&pid=21.1" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2018 Toyota Camry</h4>
+            <p class="text-blue-400 font-semibold mt-1">$17,500</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://platform.cstatic-images.com/large/in/v2/bd46001a-e576-4065-90f5-34d2cded12ba/e208394d-1394-4aec-836e-c7e3295374db/0m_kB487STlTzCMSfFKxyyR0EDY.jpg" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2020 Honda Accord</h4>
+            <p class="text-blue-400 font-semibold mt-1">$21,000</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://platform.cstatic-images.com/large/in/v2/bacf97c3-ac42-50e3-9c2f-5000870f0bbe/4d510730-fb6c-48b4-9844-ddd811a9c7e3/IaJKu6ePWzYEtxzlaHremzno2UQ.jpg" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2019 Ford Fusion</h4>
+            <p class="text-blue-400 font-semibold mt-1">$15,750</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://i.imgur.com/S3M9A8x.jpeg" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2021 Chevy Malibu</h4>
+            <p class="text-blue-400 font-semibold mt-1">$19,500</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://i.imgur.com/YgKeZGc.jpeg" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2020 Nissan Altima</h4>
+            <p class="text-blue-400 font-semibold mt-1">$18,000</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1d] rounded-2xl shadow-lg border border-gray-700 overflow-hidden flex flex-col">
+          <img src="https://i.imgur.com/sTX5k5L.jpeg" class="w-full h-48 object-cover" />
+          <div class="p-5 card-content">
+            <h4 class="text-2xl font-bold text-white">2017 Honda Civic</h4>
+            <p class="text-blue-400 font-semibold mt-1">$13,800</p>
+            <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 px-8 bg-[#121214] text-center">
+      <h3 class="text-3xl font-bold text-slate-100 mb-6">About Us</h3>
+      <p class="max-w-2xl mx-auto text-gray-300 leading-loose">
+        EliteRide Auto Group is your destination for reliable and stylish used vehicles. We offer transparent pricing, elite service, and a no-pressure shopping
